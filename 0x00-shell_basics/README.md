@@ -13,4 +13,5 @@ Write a script that lists all files (even ones with names beginning with a perio
 Write a script that prints the type of the file named iamafile. The file iamafile will be in the /tmp directory when we will run your script
 Create a symbolic link to /bin/ls, named __ls_
 Create a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory
-A script that moves all files beginning with an uppercase letter to the directory_
+A script that moves all files beginning with an uppercase letter to the directory
+Create a script that deletes all files in the current working directory that end with the character ~
