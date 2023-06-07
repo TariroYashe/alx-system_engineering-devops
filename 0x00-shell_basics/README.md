@@ -6,3 +6,4 @@ ls -l -a Display current directory contents, including hidden files Use the long
 ls -lan Long format with user and group IDs displayed numerically And hidden files starting with
 mkdir /tmp/my_first_directory Create a script that creates a directory named my_first_directory in the /tmp/ directory
 mv /tmp/ betty /tmp/my_first_directory Move the file betty
+rm /tmp/my_first_directory/betty
