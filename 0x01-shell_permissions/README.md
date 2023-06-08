@@ -9,3 +9,4 @@ A script that adds execute permission to the owner and the group owner, and read
 Write a script that adds execution permission to everybody
 Write a script that sets the permission to the file hello with no UG permissions
 Write a script that sets the mode of the file hello to this -rwxr-x-wx
+A script that sets the mode of the file.
