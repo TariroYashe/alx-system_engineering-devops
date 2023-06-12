@@ -5,5 +5,5 @@ Display the content of 2 files
 Tail task
 5-lines
 6-third
-Best school
+7-Best school
 script that writes into the file ls_cwd_content the result of the command ls -la
