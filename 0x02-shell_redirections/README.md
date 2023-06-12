@@ -17,3 +17,4 @@ script that writes into the file ls_cwd_content the result of the command ls -la
 16-whatsnext
 17-hidethisword
 18-letteronly
+19-AZ
