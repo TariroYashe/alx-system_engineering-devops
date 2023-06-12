@@ -7,3 +7,4 @@ Tail task
 6-third
 7-Best school
 script that writes into the file ls_cwd_content the result of the command ls -la
+9-duplicate_last_line
