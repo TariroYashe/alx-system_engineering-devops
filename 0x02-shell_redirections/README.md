@@ -9,3 +9,4 @@ Tail task
 script that writes into the file ls_cwd_content the result of the command ls -la
 9-duplicate_last_line
 10-no_more_js
+11-11-directories
