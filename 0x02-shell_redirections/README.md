@@ -19,3 +19,4 @@ script that writes into the file ls_cwd_content the result of the command ls -la
 18-letteronly
 19-AZ
 20-hiago
+21-reverse
