@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# Script: Display time for 12 hours and 59 minutes
+
+# Initialize variables
+hour=0
+minute=1
+
+# While loop to display time
+while [ $hour -le 12 ]; do
+    while [ $minute -le 59 ]; do
+        # Format hour and minute to ensure leading zeros
+        formatted_hour=$(printf "%02d" $hour)
+        formatted_minute=$(printf "%02d" $minute)
+
+        # Display time
+        echo "$formatted_hour:$formatted_minute"
+
+        # Increment minute
+        ((minute++))
+
+        # Display only the first 70 lines
+        if [ $hour -eq 12 ] && [ $minute -eq 59 ]; then
+            exit 0
+        fi
+    done
+
+    # Reset minute and increment hour
+    minute=1
+    ((hour++))
+done | head -n 70
