@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 # Script to display a list of currently running processes
 
-# Display the header
-echo "USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND"
-
 # Use ps command to display processes with hierarchy
 ps auxf
