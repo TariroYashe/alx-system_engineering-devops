@@ -12,4 +12,3 @@ def match_school(argument)
   
   match_school(ARGV[0])
   
-  
