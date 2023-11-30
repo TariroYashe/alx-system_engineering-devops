@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Display all active IPv4 addresses on the machine using a one-liner
+
+# Use the `ifconfig` command to retrieve network interface information
+ipv4_addresses=$(ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | cut -b 11-)
+
+# Print the result with additional formatting
+echo "$ipv4_addresses" | sed 's/^/ /' | sed 's/$/$/'
