@@ -1,18 +1,14 @@
 #!/usr/bin/env ruby
-
-def match_requirements(input)
-    regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]).{8,}$/
-    if input.match?(regex)
-      puts "Input '#{input}' meets the requirements."
-    else
-      puts "Input '#{input}' does not meet the requirements."
-    end
-  end
-  
-  # Check if there is exactly one command-line argument
-  if ARGV.length == 1
-    input = ARGV[0]
-    match_requirements(input)
-  else
-    puts "Usage: ruby script.rb <input>"
-  end
+#This line is called a shebang, and it tells the operating system to use the 
+#Ruby interpreter located in the user's PATH to execute the script.
+"""
+ARGV[0]: Refers to the first command-line argument passed to the Ruby script.
+.scan(/hbt+n/): Uses the scan method to find all occurrences of the regular expression pattern /hbt+n/ in the provided command-line argument.
+h: Matches the character 'h'.
+b: Matches the character 'b'.
+t+: Matches one or more occurrences of the character 't'.
+n: Matches the character 'n'.
+.join: Joins the matched occurrences into a single string.
+puts: Prints the resulting string to the console.
+"""
+puts ARGV[0].scan(/hbt+n/).join

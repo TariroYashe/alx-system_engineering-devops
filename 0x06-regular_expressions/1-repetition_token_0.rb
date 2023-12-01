@@ -1,19 +1,16 @@
 #!/usr/bin/env ruby
 
-def match_first_line(input)
-    regex = /ruby/i # The 'i' flag makes the regex case-insensitive
-    if input =~ regex
-      puts "The first line contains 'ruby' in any case."
-    else
-      puts "The first line does not contain 'ruby' in any case."
-    end
-  end
-  
-  # Check if an argument is provided
-  if ARGV.empty?
-    puts "Usage: ruby script.rb <input>"
-  else
-    input = File.open(ARGV[0]) { |f| f.readline } # Read the first line of the file
-    match_first_line(input)
-  end
+"""
+ARGV[0]: Refers to the first command-line argument passed to the Ruby script.
+
+.scan(/hbt{2,5}n/): Uses the scan method to find all occurrences of the .
+regular expression pattern /hbt{2,5}n/ in the provided command-line argument.
+
+h: Matches the character 'h'.
+b: Matches the character 'b'.
+t{2,5}: Matches 't' repeated between 2 and 5 times.
+n: Matches the character 'n'.
+.join: Joins the matched occurrences into a single string.
+"""
+puts ARGV[0].scan(/hbt{2,5}n/).join
   
